@@ -1,6 +1,6 @@
 # Site settings
 title: "liuwantao"
-email: 13521760670@163.com
+email: "13521760670@163.com"
 name: "Liu WanTao"
 description: "Better Late Than Never"
 encoding: utf-8
@@ -12,18 +12,17 @@ encoding: utf-8
 # baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
-github_username: liuwantao
+github_username: "liuwantao"
 permalink: "/:year/:month/:day/:title/"
 
-blog_url: http://www.lwtblog.cn
+blog_url: "http://www.lwtblog.cn"
 
 
 # Build settings
 markdown: kramdown
 
-# highlight
 #highlighter: pygments
- highlighter: rouge
+highlighter: rouge
 # highlighter: false
 
 #背景图
@@ -54,7 +53,7 @@ avatar_img_path: "static/imgs/touxiang.jpg"
 #reddit_username: your_reddit_username_goes_here
 #medium_username: your_medium_username_goes_here
 #tumblr_username: your_tumblr_username_goes_here
-weibo_username: 3134632731/profile?topnav=1&wvr=6&is_all=1
+weibo_username: "3134632731/profile?topnav=1&wvr=6&is_all=1"
 
 
 
