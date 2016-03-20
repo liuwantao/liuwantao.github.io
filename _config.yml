@@ -21,9 +21,8 @@ blog_url: www.lwtblog.cn
 markdown: kramdown
 
 # highlight
-# 本地用rouge, github上用pygments
-highlighter: pygments
-# highlighter: rouge
+#highlighter: pygments
+ highlighter: rouge
 # highlighter: false
 
 #背景图
