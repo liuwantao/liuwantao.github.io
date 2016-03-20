@@ -1,4 +1,4 @@
-
+---
 
 This is my blog based on jekyll. And I merge two template for this blog. If you want to use this model of the blog. **Please give a star at this repository**. Then you can clone it as your blog model.
 
@@ -14,4 +14,4 @@ You can visit [here](http://www.lwtblog.cn) to see this blog.
 
 >Ps: 如果你fork了这个博客，记得删除或修改`CNAME` 文件！
 
-
+---
