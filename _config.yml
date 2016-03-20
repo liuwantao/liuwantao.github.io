@@ -27,12 +27,12 @@ markdown: kramdown
 
 #背景图
 front_img: yes
-front_img_path: "static/imgs/background.jpg"
+front_img_path: static/imgs/background.jpg
 #front_img_path: "https://external.url/image.jpg"
 
 #头像
 avatar: yes
-avatar_img_path: "static/imgs/touxiang.jpg"
+avatar_img_path: static/imgs/touxiang.jpg
  
 
 #加载首页邮箱微薄之类的图标
