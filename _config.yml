@@ -1,8 +1,8 @@
 # Site settings
 title: "liuwantao"
-email: "13521760670@163.com"
+email: 13521760670@163.com
 name: Liu WanTao
-description: Better Late Than Never
+description: "Better Late Than Never"
 encoding: utf-8
 # > # this means to ignore newlines until "baseurl:"
 #   Write an awesome description for your new site here. You can edit this
@@ -15,7 +15,7 @@ encoding: utf-8
 github_username: liuwantao
 permalink: /:year/:month/:day/:title/
 
-blog_url: "http://www.lwtblog.cn"
+blog_url: http://www.lwtblog.cn
 
 
 # Build settings
@@ -28,12 +28,12 @@ markdown: kramdown
 
 #背景图
 front_img: yes
-front_img_path: "static/imgs/background.jpg"
+front_img_path: static/imgs/background.jpg
 #front_img_path: "https://external.url/image.jpg"
 
 #头像
 avatar: yes
-avatar_img_path: "static/imgs/touxiang.jpg"
+avatar_img_path: static/imgs/touxiang.jpg
  
 
 #加载首页邮箱微薄之类的图标
@@ -54,7 +54,7 @@ avatar_img_path: "static/imgs/touxiang.jpg"
 #reddit_username: your_reddit_username_goes_here
 #medium_username: your_medium_username_goes_here
 #tumblr_username: your_tumblr_username_goes_here
-#weibo_username: "3134632731/profile?topnav=1&wvr=6&is_all=1
+weibo_username: 3134632731
 
 
 
