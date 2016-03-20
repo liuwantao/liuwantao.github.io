@@ -1,7 +1,7 @@
 # Site settings
 title: "liuwantao"
 email: 13521760670@163.com
-name: Liu WanTao
+name: "Liu WanTao"
 description: "Better Late Than Never"
 encoding: utf-8
 # > # this means to ignore newlines until "baseurl:"
@@ -13,7 +13,7 @@ encoding: utf-8
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 github_username: liuwantao
-permalink: /:year/:month/:day/:title/
+permalink: "/:year/:month/:day/:title/"
 
 blog_url: http://www.lwtblog.cn
 
@@ -54,7 +54,7 @@ avatar_img_path: static/imgs/touxiang.jpg
 #reddit_username: your_reddit_username_goes_here
 #medium_username: your_medium_username_goes_here
 #tumblr_username: your_tumblr_username_goes_here
-weibo_username: 3134632731
+weibo_username: "3134632731"
 
 
 
