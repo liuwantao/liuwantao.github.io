@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "mongodb简介和安装"
+title: "mongodb"
 date: 2016-03-21 22:14:54
 categories: Sql
 excerpt: "mongodb简介和安装"
