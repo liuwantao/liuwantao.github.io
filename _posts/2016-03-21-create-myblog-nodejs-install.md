@@ -3,7 +3,7 @@ layout: post
 title: "node.js安装和配置"
 date: 2016-03-21 22:14:54
 categories: nodejs
-excerpt: node.js安装和配置
+excerpt: node.js
 ---
 
 ##安装 （mac ox）
