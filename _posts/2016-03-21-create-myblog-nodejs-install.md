@@ -1,14 +1,13 @@
 ---
 layout: post
 title: "node.js安装和配置"
-date: 2016-03-21 22:14:54
-categories: nodejs
-excerpt: nodejs
+date: "2016-03-21 22:14:54"
+categories: "nodejs"
 ---
 
-##安装 （mac ox）
+## 安装 （mac ox）
 
-###方式一
+### 方式一
 
 直接pkg包安装：
 
@@ -20,13 +19,13 @@ excerpt: nodejs
   
     npm -v  //查看npm版本
   
-##设置国内的淘宝源
+## 设置国内的淘宝源
 
-###临时修改
+### 临时修改
 
     npm config set registry http://registry.cnpmjs.org //配置指向源
     
-###永久设置
+### 永久设置
 
 找到npm配置文件：
 
