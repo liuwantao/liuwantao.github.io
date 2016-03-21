@@ -33,7 +33,7 @@ categories: "nodejs"
 
 添加：
   
-    registry =https://registry.npm.taobao.org   //写入配置文件
+    registry =https://registry.npm.taobao.org   //写入配置文件 
     
 
 
