@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "mongodb安装"
-date:   2016-03-21 15:14:54
-categories: sql
+title:  "hello jekyll!"
+date:   2015-02-10 15:14:54
+categories: jekyll
 ---
 
 ##什么是mongodb
