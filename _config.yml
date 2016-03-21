@@ -33,6 +33,9 @@ front_img_path: "static/imgs/background.jpg"
 #头像
 avatar: yes
 avatar_img_path: "static/imgs/touxiang.jpg"
+
+#小图标
+icon_img_path: "static/imgs/favicon.ico"
  
 
 #加载首页邮箱微薄之类的图标
