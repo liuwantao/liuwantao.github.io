@@ -2,7 +2,7 @@
 layout: post
 title:  "mariadb安装"
 date:   2016-03-21 15:14:54
-categories: jekyll
+categories: sql
 ---
 
 ##mariadb简洁
