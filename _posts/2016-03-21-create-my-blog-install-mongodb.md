@@ -3,7 +3,7 @@ layout: post
 title: "mongodb简介和安装"
 date: 2016-03-21 22:14:54
 categories: Sql
-excerpt: mongodb简介和安装
+excerpt: "mongodb简介和安装"
 ---
 
 ##什么是mongodb
