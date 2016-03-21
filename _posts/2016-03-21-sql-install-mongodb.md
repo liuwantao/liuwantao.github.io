@@ -2,7 +2,7 @@
 layout: post
 title:  "mongodb安装"
 date:   2016-03-21 15:14:54
-categories: jekyll
+categories: sql
 ---
 
 ## 什么是mongodb
