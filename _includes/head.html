@@ -5,7 +5,7 @@
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 	
-	<link rel="Shortcut Icon" href="../static/imgs/favicon.ico" />
+	<link rel="Shortcut Icon" href="{{ '/static/imgs/favicon.ico' | site.icon_img_path }}" />
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
