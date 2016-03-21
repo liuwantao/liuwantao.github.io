@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "testaaaaaaaa"
+title:  "nodejs安装"
 date:   2016-02-15 22:14:54
 categories: sunjianku
-excerpt: test
+excerpt: nodejs
 ---
 
 ## 安装 （mac ox）
