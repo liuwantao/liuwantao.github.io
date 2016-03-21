@@ -5,11 +5,11 @@ date:   2016-03-21 15:14:54
 categories: sql
 ---
 
-##mariadb简洁
+## mariadb简洁 ##
 
 mariadb和mysql的用发一样，是mysql的开源版本
 
-##安装
+## 安装 ##
 
     $ brew install mariadb
     
