@@ -61,4 +61,39 @@ mongodb  分布式文档存储数据库
 	
 	> show databases;  	
 
+ ###方法2
  
+ 前提是你要先安装homebrew：
+ 	
+ 	$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+ 	
+ 然后更新一下brew库：
+ 
+ 	$ brew update
+ 	
+ 开始安装：
+ 
+ 	$ brew install mongodb
+ 	
+ 根目录创建数据存储的仓库：
+
+	mkdir /data/
+	mkdir /data/db
+	sudo chmod 777 /data/db -R 
+	
+进入安装目录：
+
+	$ cd /usr/local/Cellar/mongodb/3.2.4/bin
+	$ ./mongod
+	
+	此时显示的应该是端口情况和日志文件检测情况，别关这个终端
+	
+新打开一个终端：
+
+	$ cd /usr/local/mongodb-osx-x86_64-3.2.4/bin
+	$ ./mongo  
+	
+这时候数据库就打开了，我们可以这样查看数据库的信息：
+	
+	> show databases;  
+	
