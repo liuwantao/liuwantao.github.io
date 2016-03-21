@@ -2,7 +2,7 @@
 layout: post
 title:  "nodejs安装"
 date:   2016-02-15 22:14:54
-categories: sunjianku
+categories: nodejs
 excerpt: nodejs
 ---
 
