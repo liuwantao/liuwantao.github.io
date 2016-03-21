@@ -1,9 +1,8 @@
 ---
 layout: post
 title:  "nodejs安装"
-date:   2016-02-15 22:14:54
+date:   2016-03-21 15:14:54
 categories: nodejs
-excerpt: nodejs
 ---
 
 ## 安装 （mac ox）
