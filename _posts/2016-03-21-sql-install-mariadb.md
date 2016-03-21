@@ -1,9 +1,8 @@
 ---
 layout: post
 title:  "mariadb安装"
-date:   2016-03-21 22:14:54
-categories: Sql
-excerpt: mariadb安装
+date:   2016-03-21 15:14:54
+categories: jekyll
 ---
 
 ##mariadb简洁
