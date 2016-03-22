@@ -5,6 +5,31 @@ date: 2015-03-22 22:14:54
 categories: nodejs
 ---
 
+##千分位格式化字符串
+
+	function comma(str){
+		//倒着给字符串添加逗号
+		var newstr = "";
+		var j = 1;
+		for (var i=str.length-1; i>=0; i--) {
+			newstr += str[i];
+			//每数3个数字加一个逗号，并且过滤掉第一位出现逗号的情况
+			if (j%3 == 0 && j != str.length)
+				newstr += ','; 
+			j++;
+		}
+	
+		//再把新的字符串倒回来就是我们需要的字符串了
+		var	str = '';
+		for (var k=newstr.length-1; k>=0; k--) {
+			str += newstr[k];
+		}
+		console.log(str);
+	}
+	
+	var str = "1234567890";
+	comma(str);
+
 ##菱形
 
 	//简单版本
