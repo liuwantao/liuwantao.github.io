@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "练习常用图形打印"
-date: 2016-03-22 22:14:54
+date: "2016-03-22 22:14:54"
 categories: nodejs
 ---
 
