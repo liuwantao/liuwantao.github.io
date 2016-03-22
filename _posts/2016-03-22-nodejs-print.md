@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "练习常用图形打印"
-date: 2015-03-22 22:14:54
+date: 2016-03-22 22:14:54
 categories: nodejs
 ---
 
-##千分位格式化字符串
+## 千分位格式化字符串 ##
 
 	function comma(str){
 		//倒着给字符串添加逗号
@@ -30,7 +30,7 @@ categories: nodejs
 	var str = "1234567890";
 	comma(str);
 
-##菱形
+## 菱形 ##
 
 	//简单版本
 	function square (num){
@@ -53,7 +53,7 @@ categories: nodejs
 	}
 	square(24);
 
-##回形
+## 回形 ##
 
 	//简化版
 	function square (num){
@@ -82,7 +82,7 @@ categories: nodejs
 	
 	square(10);
 	
-##等腰梯形
+## 等腰梯形 ##
 
 	function trapezoid(width, height){
 		 if (height<3 || height>width/2+1) {
