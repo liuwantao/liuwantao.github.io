@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "打印图形小练习"
-date:   2016-03-21 15:14:54
+title: "打印图形小练习"
+date: 2016-03-21 15:14:54
 categories: nodejs
 ---
 

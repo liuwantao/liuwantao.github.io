@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "nodejs安装"
-date:   2016-03-21 15:14:54
+title: "nodejs安装"
+date: 2016-03-21 15:14:54
 categories: nodejs
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "mariadb安装"
-date:   2016-03-21 15:14:54
+title: "mariadb安装"
+date: 2016-03-21 15:14:54
 categories: sql
 ---
 
@@ -20,3 +20,5 @@ mariadb和mysql的用发一样，是mysql的开源版本
 进入mysql：
 
     $ mysql -u root -p
+
+

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "mongodb安装"
-date:   2016-03-21 15:14:54
+title: "mongodb安装"
+date: 2016-03-21 15:14:54
 categories: sql
 ---
 
@@ -97,3 +97,5 @@ mongodb  分布式文档存储数据库
 	
 	> show databases;  
 	
+
+
