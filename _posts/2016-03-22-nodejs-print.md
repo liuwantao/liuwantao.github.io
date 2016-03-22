@@ -1,0 +1,93 @@
+---
+layout: post
+title: "练习常用图形打印"
+date: 2015-03-22 22:14:54
+categories: nodejs
+---
+
+##菱形
+
+	//简单版本
+	function square (num){
+		//必须为偶数才行
+		num = (num%2==0)?num:num+1;	
+		//外层控制打印多少行
+		for (var i=1; i<=num; i++) {
+			var str = '';
+			//内层控制打印多少列
+			for (var j=1; j<=num; j++) {
+				//通过判断来限制每一行打印什么
+				if ( ((i==1 || i==num) && j==num/2) || ((j==num/2-i+1 || j==num/2+i-1) && i>=2 && i<=num/2) || ((j==i-num/2 || j==num+num/2-i) && i>=num/2+1 && i<=num-1)    ) {
+					str += '*';
+				} else {
+					str += ' ';
+				}			
+			}
+			console.log(str);
+		}	
+	}
+	square(24);
+	
+![屏幕快照 2016-03-22 下午11.12.37](pic/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-22%20%E4%B8%8B%E5%8D%8811.12.37.png)
+
+
+
+##回形
+
+	//简化版
+	function square (num){
+		//必须大于1
+		if (num <= 1) {
+			console.log('参数必须大于1');
+			return false;
+		}
+		var space = Math.ceil(num/4);	
+		//外层控制打印多少行
+		for (var i=1; i<=num; i++) {
+			var str = '';
+			//内层控制打印多少列
+			for (var j=1; j<=num; j++) {
+				//通过判断来限制每一行打印什么
+				if ( (i==1 || i==num || j==1 || j==num) || ((i==space || (i==num-space+1)) && j>=space && j<=num-space+1)  ||  ((j==space || (j==num-space+1)) && i>=space && i<=num-space+1)  ) {
+					str += '*';
+				} else {
+					str += ' ';
+				}			
+			}
+			console.log(str);
+		}
+		
+	}
+	
+	square(10);
+	
+![回形](pic/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-22%20%E4%B8%8B%E5%8D%8811.11.08.png)
+
+
+##等腰梯形
+
+	function trapezoid(width, height){
+		 if (height<3 || height>width/2+1) {
+		 	console.log("高度必须大于2，并且高度不能大于宽的一半加1");
+		 	return false;
+		 }
+		//外层控制打印多少行
+		for (var i=1; i<=height; i++) {
+			var str = '';
+			//内层控制打印多少列
+			for (var j=1; j<=width; j++) {
+				//通过判断来限制每一行打印什么
+				if (  ((i==1 && j>=height && j<=width-height+1) || i==height) || (i>1 && i<height && j==height-i+1) ||  (i>1 && i<height && j==width-height+i)  ) {
+					str += '*';
+				} else {
+					str += ' ';
+				}			
+			}
+			console.log(str);
+		}
+	}
+	
+	trapezoid(20,8);
+	
+![等腰梯形](pic/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-22%20%E4%B8%8B%E5%8D%8811.08.11.png)
+
