@@ -27,10 +27,6 @@ categories: nodejs
 		}	
 	}
 	square(24);
-	
-![屏幕快照 2016-03-22 下午11.12.37](pic/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-22%20%E4%B8%8B%E5%8D%8811.12.37.png)
-
-
 
 ##回形
 
@@ -61,9 +57,6 @@ categories: nodejs
 	
 	square(10);
 	
-![回形](pic/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-22%20%E4%B8%8B%E5%8D%8811.11.08.png)
-
-
 ##等腰梯形
 
 	function trapezoid(width, height){
@@ -88,6 +81,5 @@ categories: nodejs
 	}
 	
 	trapezoid(20,8);
-	
-![等腰梯形](pic/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-22%20%E4%B8%8B%E5%8D%8811.08.11.png)
+
 
