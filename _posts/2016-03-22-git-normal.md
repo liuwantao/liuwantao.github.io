@@ -36,8 +36,8 @@ categories: git
   `git remote add origin https://github.com/demo/demo.git` 将本地库关联到github远程库上   
   `git push -u origin master` 第一次推送的时候要加上-u参数，可以将本地库的master分支与远程库的 master分支关联起来；下次提交就不需要加-u了。  
   `git clone https://github.com/pengloo53/learngit.git` 克隆远程库到本地  
-  <hr>
-  **<span id='2'>分支管理</span>**  
+
+## <span id='2'>分支管理</span>
   
   `git checkout -b dev`创建dev分支并切换到dev。相当于`git branch dev、git checkout dev`两条命令。     
   `git branch`查看当前分支`git merge dev`合并指定分支到当前分支 如，你现在`master`分支，那么执行命令就将`dev`分支合并到了`master`分支上。   
