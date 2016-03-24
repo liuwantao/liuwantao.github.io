@@ -5,11 +5,10 @@ date: 2016-03-22 23:14:54
 categories: redis
 ---
 
-
 ## redis连接静态类 ##
 
-###redis连接静态类。redis连接池 减少redis的重复连接，降低内存消耗！
-```  
+### redis连接静态类。redis连接池 减少redis的重复连接，降低内存消耗！###
+
     <?php
         class RedisPool
         {
@@ -36,9 +35,9 @@ categories: redis
             	return self::$connections[$alias];
             }
     	}
-```
-####**使用实例**  
-```
+
+#### 使用实例 ####  
+
     <?php 
 	require 'RedisPool.php';
 	$conf = array( 
@@ -48,4 +47,3 @@ categories: redis
 	$redis = RedisPool::getRedis('RA'); //连接RA，使用默认0库
 	$redis->set('user','private');
 	echo $redis ->get('user');
-```
