@@ -10,16 +10,14 @@ categories: linux
 安装 Ubuntu 以后，需要对系统的安全性进行加固，并在日常使用中时刻关注系统安全。本篇内容包括：日志查看监控、加强SSH安全、使用ufw防火墙等。
 
 查看用户活动
-<hr>
+
      
           w  当前登录用户的详细状态
           ac  用户总的连接时间。从/var/log/wtmp文件获取信息
           last  所有用户登陆记录。从/var/log/wtmp文件获取信息
           lastb  所有失败的、错误的登录
   
-日志查看与监控
-
-<hr>
+### 日志查看与监控
 
 系统日志  
    
@@ -66,7 +64,7 @@ categories: linux
 
       tail -f example.log  #跟踪文件，Ctrl+C退出
 
-## 分析系统日志, 可提取并邮件发送重要信息
+### 分析系统日志, 可提取并邮件发送重要信息
      
        sudo aptitude install logwatch
        ls -l /usr/share/logwatch/scripts/services
@@ -103,7 +101,8 @@ categories: linux
 
       sudo passwd -l root
 
-加强 SSH 安全
+### 加强 SSH 安全
+
 在服务端生成密钥   
 
        su - abc
@@ -183,7 +182,8 @@ categories: linux
        sudo service ufw restart
        sudo ufw disable && sudo ufw enable
 
-保护共享内存
+### 保护共享内存
+
 攻击一个运行中的服务(如httpd)经常要使用 /dev/shm，修改 /etc/fstab 使其更安全（需要reboot）。  
 
        sudo vi /etc/fstab
