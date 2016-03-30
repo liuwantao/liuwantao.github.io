@@ -5,10 +5,9 @@ date: 2016-03-21 23:14:54
 categories: mac
 ---
 
+## mac快捷键
 
-##mac快捷键
-
-###开机快捷键
+### 开机快捷键
 
 	C 从光盘启动系统
 	D 从磁盘启动系统
@@ -28,7 +27,7 @@ categories: mac
 	Cmd + Option + t + v 强制主机使用外接电视当作显示器。
 	Cmd + Option + O + F 打开主板固件。
 
-###退出快捷键
+### 退出快捷键
 
 	Cmd + .点 停止进程
 	Cmd + Option + Esc 强制退出程序
@@ -37,7 +36,7 @@ categories: mac
 	Cmd + Option + Eject 或 Cmd + Option + Power 睡眠
 	Ctrl + Eject 选择重新启动，睡眠，关机之对话框
 
-###抓屏快捷键
+### 抓屏快捷键
 
 	Cmd + Shift + 3 全屏
 	Cmd + Shift + 4 选择部分
@@ -45,7 +44,7 @@ categories: mac
 	以上操作同时按住 Ctrl 键，放到剪贴簿中，否则存放在桌面。
 	锁屏快捷键 [Ctrl] + [Shift] + [Eject]
 
-###Finder 快捷键
+### Finder 快捷键
 
 	Cmd - H 隐藏程序；Cmd - Option - H 隐藏其他程序
 	Cmd - Shift - Delete 清空垃圾桶；Cmd - Shift - Option - Delete 强制清空垃圾桶
@@ -91,7 +90,7 @@ categories: mac
 	Cmd + Opt + D 隐藏/显示Dock
 	Cmd + 点击Dock项目 - 在Finder显示项目
 
-###通用快捷键
+### 通用快捷键
 
 	这些快捷键在基于 Cocoa 的应用中都应该有效（例如 Safari、Chrome、文本编辑、Pages 等），并且适用于所有版本的 Mac OS X 系统。如果在 iOS 设备上使用蓝牙键盘或通过 Dock 连接的键盘，也可以使用这些快捷键。
 	Cmd + T 在应用程序中显示字体面板
