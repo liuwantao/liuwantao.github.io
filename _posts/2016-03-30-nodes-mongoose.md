@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "express中间件mongoose"
-date: 2016-03-31 15:14:54
-categories: nodejs
+date: 2016-03-30 15:14:54
+categories: express
 ---
+
 ## mongoose 中间件常用CRUD
 
 ### 导入中间件
