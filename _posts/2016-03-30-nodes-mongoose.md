@@ -7,6 +7,10 @@ categories: express
 
 ## mongoose 中间件常用CRUD
 
+### 安装mongoose
+
+    npm install mongoose --save
+
 ### 导入中间件
 
     var express = require('express');
@@ -18,7 +22,7 @@ categories: express
     var db = mongoose.createConnection('localhost','lwtTest');
 
 
-### 定义chema，也就是传统意义的表结构
+### 定义Schema，也就是传统意义的表结构
 
     var personSchema = new mongoose.Schema({
         _name:String,   //定义一个属性name，类型为String
