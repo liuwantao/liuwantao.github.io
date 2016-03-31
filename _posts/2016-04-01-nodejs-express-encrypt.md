@@ -1,8 +1,8 @@
 ---
-layout: "post"
+layout: post
 title: "express加密模块"
-date: "2016-04-01 03:33:22"
-categories: "express"
+date: 2016-04-01 03:35:22
+categories: express
 ---
 
 ## nodejs常用加密方式
