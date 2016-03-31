@@ -1,11 +1,12 @@
 ---
-layout: post
+layout: "post"
 title: "express加密模块"
-date: 2016-4-1 3:33:22
-categories: express
+date: "2016-04-01 03:33:22"
+categories: "express"
 ---
 
 ## nodejs常用加密方式
+
     /**
      * @加密模块
      * @md5可以被彩虹吧破解,这里就不用啦
