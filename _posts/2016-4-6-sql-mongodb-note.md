@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "nodejs和mongoose的一些细节"
+title: "mongodb的一些细节"
 date: 2016-4-6 23:33:21
-categories: nodejs
+categories: sql
 ---
 
 ## 关于mongodb查询出来的数据类型
@@ -93,11 +93,14 @@ find查询到的数据是一个数组(因为查询多条呀),是这样的:
     
 在定义表结构的时候,我们可以添加一些内置的函数来验证数据:
 
+
 * required 非空验证
 * min/max 范围验证
 * enmu/match 枚举验证/匹配验证
 * validate 自定义验证
     
+
+
     var PersonSchema = new Schema({
       name:{
         type:'String',
@@ -117,7 +120,8 @@ find查询到的数据是一个数组(因为查询多条呀),是这样的:
         validate:[validator,err]  //validator是一个验证函数，err是验证失败的错误信息
       }
     });
-    
+        
+
 如果验证失败,返回err:
 
     err.errors                  //错误集合（对象）
