@@ -2,11 +2,10 @@
 
 layout: post
 title:  "评论盖楼两种方式"
-date:   2016-04-07 21:00:00
+date:   2016-04-07 00:00:00
 categories: nodejs
 
 ---
-
 
 盖楼两种实现方式
 -------------------
@@ -363,7 +362,7 @@ js:
           },
           error:function(err){
       
-              }
+              } 
           });
         }
   
