@@ -347,14 +347,14 @@ js:
                   //$("#shopReviewDiv").append("<div><img src=''><div style='position: relative;'></div></div>");
                   if( l != 0 ) {  //判断哪一条数据有子评论,有得话就先把子字评论拼接起来
                       str = "<div style='height:"+(l*50+65)+"px;'><img src=''><div style='position:relative;'>";
-                      str += "<div style='left:" + l + "%;top:" + (3*l+6) + "px;width:" + (100-2*l-4) + "%;min-height:50px;'><div style='background:#ffe;margin-top:0px;'><b style='color: #00d6b2'>User: "+data[i].userPhone+"</b><em style='float:right;'>1&nbsp;</em><br/><span style='color: #bd362f'> "+data[i].content+"</span><a href='#' onclick=toReviewOther('"+data[i]._id+"')>Review</a></div></div>";
+                      str += "<div style='left:" + l + "%;top:" + (3*l+6) + "px;width:" + (100-2*l-4) + "%;min-height:50px;'><div style='background:#ffe;margin-top:0px;'><b style='color: #00d6b2'>User: "+data[i].userName+"</b><em style='float:right;'>1&nbsp;</em><br/><span style='color: #bd362f'> "+data[i].content+"</span><a href='#' onclick=toReviewOther('"+data[i]._id+"')>Review</a></div></div>";
                       for (var j = 0; j < l; j++) {  //内层循环带 有子平论的回复
-                          str += "<div style='left:" + (l-1-j) + "%;top:" + (3*l +3 - 3*j) + "px;width:" + (98-2*l + 2 * j) + "%;min-height:" + (100 + 50 * j) + "px;'><div style='background:#ffe;margin-top:" + (50 * j+60) + "px;'><b  style='color: #00d6b2'>User: "+zi[j].userPhone+"</b><em style='float:right;'>"+(j+2)+"&nbsp;</em><br/><span style='color:black'> "+zi[j].content+"</span><a href='#' onclick=toReviewOther('"+data[i]._id+"')>Review</a></div></div>";
+                          str += "<div style='left:" + (l-1-j) + "%;top:" + (3*l +3 - 3*j) + "px;width:" + (98-2*l + 2 * j) + "%;min-height:" + (100 + 50 * j) + "px;'><div style='background:#ffe;margin-top:" + (50 * j+60) + "px;'><b  style='color: #00d6b2'>User: "+zi[j].userName+"</b><em style='float:right;'>"+(j+2)+"&nbsp;</em><br/><span style='color:black'> "+zi[j].content+"</span><a href='#' onclick=toReviewOther('"+data[i]._id+"')>Review</a></div></div>";
                       }
                      mar = 50*l+10;
                   } else {  //如果只有单个的对商品的评价,没有字评价,就用这个样式
                       str = "<div style='margin-top:10px'><img src=''><div style='position:relative;'>";
-                      str += "<div style='border:0px;width:100%;min-height:50px;'><div style='background:#ffe;margin-top:10px;'><b style='color: #00d6b2'>User: "+data[i].userPhone+"</b><br/><span style='color: #bd362f'> "+data[i].content+"</span><a href='#' onclick=toReviewOther('"+data[i]._id+"')>Review</a></div></div>";
+                      str += "<div style='border:0px;width:100%;min-height:50px;'><div style='background:#ffe;margin-top:10px;'><b style='color: #00d6b2'>User: "+data[i].userName+"</b><br/><span style='color: #bd362f'> "+data[i].content+"</span><a href='#' onclick=toReviewOther('"+data[i]._id+"')>Review</a></div></div>";
                   }
                   str += "</div></div>";
                   $("#shopReviewDiv").append(str);
