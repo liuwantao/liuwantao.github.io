@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "盖楼的两种实现方式"
-date: 2016-4-6 11:30:10
+date: 2016-4-7 19:11:13
 categories: nodejs
 ---
 
@@ -62,54 +62,54 @@ categories: nodejs
         }]
       }
     
-    插入语句:
-    /**
-     * @评论插入语句
-     * @json 数据对象,拼装的用户输入的数据
-     * @callBack 回调函数
-     */
-    var db = mongoose.createConnection('localhost', 'dbname'); 
-    exports.disAdd = function (json, callBack) {
-        var schema = new mongoose.Schema({   //实例化schema对象
-            上面的表结构
-            ...
-        });
-        var goodsModel = db.model('tableName',schema);  //model对象
-        goodsModel.findById(json.id,function(err, result){//注意这里的result,它是查询到得model的一个子对象,是可以调用自己的方法的
-        if (err) {                                      //不要单单理解成一条数据
-                callBack('error');   //向调用这个函数的中间价传递信息
-            } else {
-                result._contents.push({  //每当有新数据,就向表中的_contens数组集合压入数据
-                    _userPhone : json.phone,
-                    _content : json.con
-                });
-                result.save();           // 保存我们的修改
-                callBack('success');
-            }
-        });
-    }
-    
-    查询语句:
-    /**
-     * @获取某个商品的品论
-     * @gid 商品id
-     * @callBack 回调函数
-     */
-    exports.getDiscuss = function (gid, callBack) {
-        var schema = new mongoose.Schema({   //实例化schema对象
-            上面的表结构
-            ...
-        });
-        var goodsModel = db.model('tableName',schema);  //model对象
-        goodsModel.find({_gid:gid}, function (err, goods) {   // 查询数据
-            if (err) {
-                callBack('error');
-            } else {
-                callBack(goods);  //把查到数据传给调用该函数的中间件(当然,如果你的路由没有分开,也可以直接在这里res处理)
-            }
-        });
-    }
-    
+        插入语句:
+        /**
+         * @评论插入语句
+         * @json 数据对象,拼装的用户输入的数据
+         * @callBack 回调函数
+         */
+        var db = mongoose.createConnection('localhost', 'dbname'); 
+        exports.disAdd = function (json, callBack) {
+            var schema = new mongoose.Schema({   //实例化schema对象
+                上面的表结构
+                ...
+            });
+            var goodsModel = db.model('tableName',schema);  //model对象
+            goodsModel.findById(json.id,function(err,result){//注意这里的result,它是查询到得model的一个子对象,是可以调用自己的方法的
+            if (err) {                                      //不要单单理解成一条数据
+                    callBack('error');   //向调用这个函数的中间价传递信息
+                } else {
+                    result._contents.push({  //每当有新数据,就向表中的_contens数组集合压入数据
+                        _userPhone : json.phone,
+                        _content : json.con
+                    });
+                    result.save();           // 保存我们的修改
+                    callBack('success');
+                }
+            });
+        }
+        
+        查询语句:
+        /**
+         * @获取某个商品的品论
+         * @gid 商品id
+         * @callBack 回调函数
+         */
+        exports.getDiscuss = function (gid, callBack) {
+            var schema = new mongoose.Schema({   //实例化schema对象
+                上面的表结构
+                ...
+            });
+            var goodsModel = db.model('tableName',schema);  //model对象
+            goodsModel.find({_gid:gid}, function (err, goods) {   // 查询数据
+                if (err) {
+                    callBack('error');
+                } else {
+                    callBack(goods);  //把查到数据传给调用该函数的中间件(当然,如果你的路由没有分开,也可以直接在这里res处理)
+                }
+            });
+        }
+        
 ### 方式2:在查询数据的时候进行数据处理 ###
 
 这种方式是我们在查出来数据的时候进行进行数据处理
@@ -368,4 +368,3 @@ js:
 ---
 
 有不对的地方或者有更好的方法请在下方留言
-    
