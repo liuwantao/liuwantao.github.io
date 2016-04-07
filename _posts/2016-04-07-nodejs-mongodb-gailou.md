@@ -1,11 +1,12 @@
 ---
 
 layout: post
-title: "评论盖楼两种方式"
-date: 2016-4-7 21:14:30
+title:  "评论盖楼两种方式"
+date:   2016-04-07 21:00:00
 categories: nodejs
 
 ---
+
 
 盖楼两种实现方式
 -------------------
@@ -65,7 +66,6 @@ nodejs后台实现方式
             _addTime : {type:Date, default:Date.now()}  //评论时间
         }]
       }
-    
         插入语句:
         /**
          * @评论插入语句
@@ -132,7 +132,6 @@ nodejs后台实现方式
       addtime:{type: Date, default: Date.now()},   //评论时间
       review:{type: String, default: ''}   //  用来存该条商品评论的所有回复
     }
-  
     插入语句:
     接收到数据后的处理:
     如果是对商品的评论,这样处理数据:
@@ -146,7 +145,6 @@ nodejs后台实现方式
       toremark:req.body.toremark,    //对哪个评价进行的回复
       content:req.body.content  //内容
     }
-    
     /**
      * @插入评论的方法
      * @param data json 要插入的数据
@@ -162,7 +160,6 @@ nodejs后台实现方式
     		callback(err);   //回调信息
     	});
     }
-
     查询语句:
     /**
      * @查询评价信息
@@ -180,7 +177,6 @@ nodejs后台实现方式
     		getCallbakc(i, model,data,callback);  	//因为要循环查询每一个评价的回复,所有通过特殊的方式处理回调函数的异步
     	});
     }
-    
     //这个函数处理回调函数的异步,很实用哦
       function getCallbakc (i, model, obj, callback) {
     	if (i < obj.length) {  //判断当前商品的评价数量,用来判断是否终止递归
@@ -223,7 +219,7 @@ css:
     </style>
   
 html:
-  
+
     <article id="nest" style="padding: 5px;">
         <!--<div class="comments">
             <p class="theauthor">我是用户名</p>
@@ -248,7 +244,7 @@ html:
      ps: 注释的部分不要,用ajax循环替换
   
 js:
-  
+
       function getDiscuss() {
       $.ajax({
           url:'http://192.168.160.14:3000/admin/getDiscuss',
@@ -322,8 +318,7 @@ js:
 html:
 
     <section data-role="main" class="ui-content" id="shopReviewDiv">
-    
-    </section>
+     </section>
     
 css:
 
@@ -367,10 +362,10 @@ js:
               }
           },
           error:function(err){
-  
-          }
-      });
-    }
+      
+              }
+          });
+        }
   
 ---
 
