@@ -244,70 +244,70 @@ html:
   
 js:
 
-      function getDiscuss() {
-      $.ajax({
-          url:'http://192.168.160.14:3000/admin/getDiscuss',
-          data:{gid:goodsId},
-          dataType:'json',
-          type:'post',
-          success:function (data) {
-              var c = data;
-              //$('#two')
-              var a ='<div class="commentsinfo">';
-              var b ='   <p class="theauthor">';
-              var h ='</p> <span class="commentsnumber">';
-              var d ='</span><p>';
-              var e ='</p></div>';
-              var g = '<div class="comments">';
-              var str;
-              for(var i=0;i<c.length;i++){
-                  var xstr;
-                  var x =c[i]._contents;
-                  var w ='</p><div class="pinglun "><a href="#" class="goodscsheia" data-rel="popup" data-position-to="window" data-transition="fade" data-cidd="'+c[i]._id+'">评论</a></div></div></div>';
-                  var ding;
-                  var shou;
-                  var shouxia;
-                  var num = x.length;
-                  for(var f=0;f<num;f++){
-                      var xxstr ='';
-                      console.log(f);
-                      if(f == num-1){
-                          console.log(x[f])
-                          var shou =  g +b +x[f]._userPhone+'</p>';
-                          var shouxia = '<p class="theauthor">'+x[f]._content+'</p>';
-                      }else{
-                          ding +=a;
-                          xxstr = b +x[f]._userPhone+h+(f+1)+d+x[f]._content+e;
-                      }
-                      xstr += xxstr;
-                  }
-                  str += (shou+ding+xstr+shouxia+w);
-              }
-              $('#nest').html(str);
-              // -----------------回复
-              $('.goodscsheia').click(function () {
-                  var content = $('#sendM').val();
-                  var cid = $(this).data('cidd');
-                  $.ajax({
-                      url:'http://192.168.160.14:3000/admin/disAdd',
-                      data:{id:cid, con:content},
-                      type:'post',
-                      dataType:'json',
-                      success:function (data) {
-                          if (data.result == 'yes') {
-                              $('#sendM').val(' ');
-                              getDiscuss();
-                          } else if (data.result == 'noLogin') {
-                              $('#hiddenLogin').click();
-                          }
-                      }
-                  });
-              });
-                // --------------回复结束
-            }
-        });
-    }
- 
+        function getDiscuss() {
+            $.ajax({
+                url:'http://192.168.160.14:3000/admin/getDiscuss',
+                data:{gid:goodsId},
+                dataType:'json',
+                type:'post',
+                success:function (data) {
+                    var c = data;
+                    //$('#two')
+                    var a ='<div class="commentsinfo">';
+                    var b ='   <p class="theauthor">';
+                    var h ='</p> <span class="commentsnumber">';
+                    var d ='</span><p>';
+                    var e ='</p></div>';
+                    var g = '<div class="comments">';
+                    var str = '';
+                    for(var i=0;i<c.length;i++){
+                        var xstr = '';
+                        var x =c[i]._contents;
+                        var w ='</p><div class="pinglun "><a href="#" class="goodscsheia" data-rel="popup" data-position-to="window" data-transition="fade" data-cidd="'+c[i]._id+'">评论</a></div></div></div>';
+                        var ding = '';
+                        var shou = '';
+                        var shouxia = '';
+                        var num = x.length;
+                        for(var f=0;f<num;f++){
+                            var xxstr ='';
+                            console.log(f);
+                            if(f == num-1){
+                                console.log(x[f])
+                                var shou =  g +b +x[f]._userPhone+'</p>';
+                                var shouxia = '<p class="theauthor">'+x[f]._content+'</p>';
+                            }else{
+                                ding +=a;
+                                xxstr = b +x[f]._userPhone+h+(f+1)+d+x[f]._content+e;
+                            }
+                            xstr += xxstr;
+                        }
+                        str += (shou+ding+xstr+shouxia+w);
+                    }
+                    $('#nest').html(str);
+                    // -----------------回复
+                    $('.goodscsheia').click(function () {
+                        var content = $('#sendM').val();
+                        var cid = $(this).data('cidd');
+                        $.ajax({
+                            url:'http://192.168.160.14:3000/admin/disAdd',
+                            data:{id:cid, con:content},
+                            type:'post',
+                            dataType:'json',
+                            success:function (data) {
+                                if (data.result == 'yes') {
+                                    $('#sendM').val(' ');
+                                    getDiscuss();
+                                } else if (data.result == 'noLogin') {
+                                    $('#hiddenLogin').click();
+                                }
+                            }
+                        });
+                    });
+                    // --------------回复结束
+                }
+            });
+        }
+ 	
     
 ### 方法2:百分比定位居中法
 
