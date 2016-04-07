@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: "post"
 title: "盖楼的两种实现方式"
-date: 2016-04-07 19:11:13
-categories: nodejs
+date: "2016-04-07 20:43:33"
+categories: "nodejs"
 ---
 
 ## 盖楼两种实现方式 ##
